@@ -49,7 +49,7 @@
 					        	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					      	</div>
 						    <div class="modal-body">
-							  	<form action="form-submit.php">
+							  	<form action="form_submit.php" method="POST">
 							    	<div class="mb-3">
 							      		<label for="name">Patient Name</label>
 							      		<input type="text" class="form-control" placeholder="Enter Name" name="name">
@@ -76,12 +76,12 @@
 							    			</div>	
 							    		</div>
 							    	</div>
-							  </form>
+							    	<div class="modal-footer">
+					        			<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+					        			<button type="submit" class="btn btn-primary" name="submit">Submit</button>
+					      			</div>
+							  	</form>
 						    </div>
-					      	<div class="modal-footer">
-					        	<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-					        	<button type="submit" class="btn btn-primary">Submit</button>
-					      	</div>
 				    	</div>
 				  	</div>
 				</div>
@@ -111,105 +111,61 @@
 
 	<!-- Start Book Doctor -->
 	<div class="container listing-doctor mt-5">
-		<h2 class="text-center">Doctor Not Available</h2>
-		<!-- <div class="row">
+		<h2 class="text-center">Book Your Appointment</h2>
+		<div class="row">
 			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px;">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Bala Roga</h4>
-				    	<p class="card-text"><span>Specialized:</span> Pediatrics MD</p>
-						<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
+				<a href="doctor brief/zeehsan-farooqui.html" style="text-decoration: none; color: #000;">
+					<div class="card" style="width:400px;">
+					    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
+					  	<div class="card-body">
+					    	<h4 class="card-title">Dr. Zeeshan Farooqui</h4>
+					    	<p class="card-text"><span>Specialized:</span> Surgery</p>
+							<p class="card-text"><span>Contact:</span> 91+ 9340070017 </p>
+					    	<a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book your Appointment</a>
+					    </div>
+					</div>
+				</a>
 			</div>
 			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Kayachikitsa </h4>
-				    	<p class="card-text"><span>Specialized:</span> Internal Medicine</p>
-						<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
+				<a href="doctor brief/waseem.html" style="text-decoration: none; color: #000;">
+					<div class="card" style="width:400px;">
+					    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
+					  	<div class="card-body">
+					    	<h4 class="card-title">Dr. Waseem Farooqui</h4>
+					    	<p class="card-text"><span>Specialized:</span> Surgery</p>
+							<p class="card-text"><span>Contact:</span> 91+ 9907892146 </p>
+					    	<a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book your Appointment</a>
+					    </div>
+					</div>
+				</a>
 			</div>
 			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Rasa Shastra </h4>
-				    	<p class="card-text"><span>Specialized:</span> Rasa Chikitsa</p>
-				    	<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
+				<a href="doctor brief/h-rehman.html" style="text-decoration: none; color: #000;">
+					<div class="card" style="width:400px;">
+					    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
+					  	<div class="card-body">
+					    	<h4 class="card-title">Dr. H. Rehman </h4>
+					    	<p class="card-text"><span>Specialized:</span> Surgery</p>
+							<p class="card-text"><span>Contact:</span> 91+ 9630984816 </p>
+					    	<a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book your Appointment</a>
+					    </div>
+					</div>
+				</a>
 			</div>
 			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Swasthya Vritta</h4>
-				    	<p class="card-text"><span>Specialized:</span> Preventive & Social Medicine</p>
-				    	<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
+				<a href="doctor brief/shankar-singh.html" style="text-decoration: none; color: #000;">
+					<div class="card" style="width:400px;">
+					    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
+					  	<div class="card-body">
+					    	<h4 class="card-title">Dr. Shankar Singh Pushpad </h4>
+					    	<p class="card-text"><span>Specialized:</span> Homeopathy</p>
+							<p class="card-text"><span>Contact:</span> 91+ 9981146911 </p>
+					    	<a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book your Appointment</a>
+					    </div>
+					</div>
+				</a>
 			</div>
-			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Rasayana & Vajikarana</h4>
-				    	<p class="card-text"><span>Specialized:</span> Geriatrics and Aphrodisiacs</p>
-				    	<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
-			</div>
-			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Prasuti Stri Roga</h4>
-				    	<p class="card-text"><span>Specialized:</span> Gynaecology & Obstetrics</p>
-				    	<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
-			</div>
-			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr.  Shalya Tantra</h4>
-				    	<p class="card-text"><span>Specialized:</span> Surgery</p>
-				    	<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
-			</div>
-			<div class="col-md-4 mt-5">
-				<div class="card" style="width:400px">
-				    <img class="card-img-top" src="assets/img/tes1.png" alt="Card image">
-				  	<div class="card-body">
-				    	<h4 class="card-title">Dr. Shalakya Tantra</h4>
-				    	<p class="card-text"><span>Specialized:</span> ENT & Ophthalmology</p>
-				    	<p class="card-text"><span>Contact:</span> 91+ 9876543210</p>
-						<p class="card-text"><span>Address:</span> Max Hospital, Delhi </p>
-				    	<a href="doctor-detail.html" class="btn btn-primary">Book Your Appointment</a>
-				    </div>
-				</div>
-			</div>
-		</div> -->
+		</div>
 	</div>
 	<!-- End Book Doctor -->
 

@@ -48,7 +48,7 @@
 					        	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					      	</div>
 						    <div class="modal-body">
-							  	<form action="form-submit.php">
+							  	<form action="form_submit.php" method="POST">
 							    	<div class="mb-3">
 							      		<label for="name">Patient Name</label>
 							      		<input type="text" class="form-control" placeholder="Enter Name" name="name">
@@ -75,12 +75,12 @@
 							    			</div>	
 							    		</div>
 							    	</div>
-							  </form>
+							    	<div class="modal-footer">
+					        			<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+					        			<button type="submit" class="btn btn-primary" name="submit">Submit</button>
+					      			</div>
+							  	</form>
 						    </div>
-					      	<div class="modal-footer">
-					        	<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-					        	<button type="submit" class="btn btn-primary">Submit</button>
-					      	</div>
 				    	</div>
 				  	</div>
 				</div>
@@ -178,6 +178,11 @@
         </div>
     </footer>
 	<!-- End Footer Section -->
+
+	<!-- whatsapp -->
+    <div class="callLogo">
+      <a href="https://wa.me/+918602992146	?text=Hi" target="_blank"><img src="assets/whatsaap.png"></a>
+    </div>
 </body>
 </html>
 <!-- Latest compiled JavaScript -->

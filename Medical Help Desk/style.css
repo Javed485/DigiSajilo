@@ -533,3 +533,15 @@
 #myModal .modal-content{
 	background-color: rgba(16,146,131,0.5);
 }
+.callLogo{
+  position: relative;
+}
+.callLogo a img{
+position: fixed;
+right: 30px;
+bottom: 50px;
+z-index: 1000000;
+width: 55px;
+border-radius: 50%;
+box-shadow: 0px 0px 5px 1px #aaa;
+}
